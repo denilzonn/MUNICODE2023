@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let suma = 0;
+        let aprobados = 0;
+        let reprobados = 0;
+        for (let i = 1; i<=10; i++ ){
+            let nota = parseInt(prompt("ingrese nota"));
+            if (nota <= 100 && nota > 0){
+                
+                suma = suma + nota;
+                if (nota >=65){
+                    aprobados = aprobados +1;
+                }else{
+                    reprobados = reprobados +1;
+                }
+            }else{
+                alert("La nota es invalida");
+                i = i -1;
+
+            }
+
+
+
+        }
+
+        let promedio= suma / 10 ; 
+        document.write("Estudiante aprobados "+aprobados+"<br>");
+        document.write("Estudiante aprobados "+reprobados+"<br>");
+        document.write("promedio de notas "+promedio);
+    </script>
+    
+</body>
+</html>

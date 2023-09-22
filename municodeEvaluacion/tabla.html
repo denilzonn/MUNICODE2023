@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function agregarfila(){
+            var tabla = document.getElementById("tabla");
+            var fila = document.createElement("tr");
+            //nombre 
+            var celda = document.createElement("td");
+            celda.textContent = document.getElementById("nombre").value;
+            fila.appendChild(celda);
+            //edad
+            celda = document.createElement("td");
+            celda.textContent = document.getElementById("edad").value;
+            fila.appendChild(celda);
+
+            tabla.appendChild(fila);
+
+        }
+    </script>
+
+    <label>nombre</label><input type="text" id="nombre" /> <br>
+    <label>edad</label><input type="text" id="edad" /> 
+    <button onclick="agregarfila()">Agregar</button>
+    <table border="1" id="tabla">
+        <tr><th>nombre</th><th>edad</th></tr>
+        <tr><td>Maria</td><td>44</td></tr>
+    </table>
+
+    
+    
+</body>
+</html>
