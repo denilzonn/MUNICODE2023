@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid rgb(0, 0, 0);  
+        }
+    </style>
+    <title>SITIOS TURISTICOS</title>
+    <link rel="stylesheet" href="tu.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <nav>
+                <a href="registrar.html">Resgistrar sitio</a>
+                <a href="mostrar.html">Mostrar Sitios</a>
+            </nav>
+        </header>
+    </div>
+  <center> <h1>SITIOS TURISTICOS</h1>
+  <form action="#">
+    <label for="País">Pais</label>
+    <select name="Lugares Turisticos" id="Pais">
+      <option value="País">Guatemala</option>
+      <option value="País">El Salvador</option>
+      <option value="País">Honduras</option>
+      <option value="País">Nicaragua</option>
+      <option value="País">Costa Rica</option>
+      <option value="País">Panama</option>
+        </select>
+    
+        <br> <br> <label for="Nombre">Nombre</label>
+    <input id="Nombre" name="Nombre" placeholder="Tikal">
+
+    <br> <br> <label for="Horario">Horario</label>
+    <input id="Horario" name="Horario" placeholder="8 a 12 de lunes a viernes">
+    <br><br>
+
+    <label for="descripcion">descripcion</label>
+    <br><textarea cols="50" rows="10" id="comentario" placeholder="Ingrese descripcion" name="Comentario"></textarea>
+    
+    <br><br><input type="submit" value="Guardar" />
+  </form>
+<br><table style="width: 500px;">
+    <tr>
+        <th>Pais</th>
+        <th>Nombre</th>
+        <th>Acciones</th>
+        <th>Likes</th>
+        </tr>
+        <tr>
+        <td>Guatemala</td>
+        <td>Tikal</td>
+        <td>Modificar,Eliminar, ver</td>
+        <td>5</td>
+        </tr>
+        <tr>
+        <td>Costa Rica</td>
+         <td>Volcan Orosi</td>
+        <td>Modificar,Eliminar, ver</td>
+        <td>2</td>
+       </tr>
+    </table></center>
+</body>
+<body>
+
+
+
+</html>
